@@ -1,0 +1,72 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js",
+    "build": "rimraf ./dist && webpack --config webpack.config.production.js",
+    "preview": "pushstate-server ./dist 1234",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "React-Router",
+    "MobX",
+    "Webpack",
+    "ES6",
+    "ES7"
+  ],
+  "author": "Nishant Nahata",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.3.1",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "react-hot-loader": "next",
+    "resolve-url-loader": "^2.1.0",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.4",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "axios": "^0.18.0",
+    "css-declaration-sorter": "^4.0.1",
+    "css-mqpacker": "^7.0.0",
+    "electron": "^2.0.6",
+    "faker": "^4.1.0",
+    "lazy-route": "^1.0.7",
+    "mobx": "^5.0.0",
+    "mobx-react": "^5.2.3",
+    "mobx-react-devtools": "^6.0.2",
+    "moment": "^2.15.1",
+    "package": "^1.0.1",
+    "postcss-cssnext": "^3.0.2",
+    "pushstate-server": "^3.0.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "latest",
+    "rfx-core": "^1.5.3",
+    "webpack-cli": "^3.1.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "repository": {
+    "url": "git@github.com:nishantcoder97/react-boilerplate.git",
+    "type": "git"
+  }
+}
